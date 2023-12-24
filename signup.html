@@ -1,0 +1,13 @@
+<head>
+    <script src="https://unpkg.com/htmx.org@1.9.9"></script>
+</head>
+<body>
+    <form hx-post="/signup" hx-target="#response" hx-swap="innerHTML" hx-trigger="submit">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" data-empty="true" required>
+        <input type="confirm password" id="confirm password" name="confirm password" placeholder="Confirm Password" required>
+        <button type="submit">Signup</button>
+    </form>
+    <div id="response"></div>
+</body>
+</html>
